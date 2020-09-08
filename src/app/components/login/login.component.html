@@ -1,0 +1,20 @@
+<div class="loginPage">
+    <div class="loginArea">
+        <form (ngSubmit)="handleSubmit()" form="ngForm" novalidate>
+            <div class="loginText title">Login to your account</div>
+            <div class="row">
+                <div class="rowLeft inputLabel">Email address:</div>
+                <div class="rowRight"><input type="text" name="email" required/></div>
+            </div>
+            <div class="row">
+                <div class="rowLeft inputLabel">Password:</div>
+                <div class="rowRight"><input type="password" name="password" required/></div>
+            </div>
+            <div class="row">
+                <button type="submit" id="btnSubmit" class="companyBackgroundColor">Login</button>
+            </div>
+            <div id="lnkForgotPassword" class="smallText"><a routerLink="/forgot-password">Forgot password</a></div>
+            <div id="lnkNewMember">New member?&nbsp;<a routerLink="/new-member">Register</a></div>
+        </form>
+    </div>
+</div>

@@ -1,0 +1,25 @@
+<div class="app">
+  <div class="header">
+    <div class="logo"><a routerLink="/home"><img class="logo" src="../assets/img/member-logo.png" alt=""/></a></div>
+    <div class="headerTitle">
+      <div class="mainTitle companyColor">M e m b e r S p o r t s</div><div class="subTitle companyColor">It's your sport. Be a member.</div>
+    </div>
+    <div class="loginDiv" *ngIf="loggedIn===true"><a routerLink="/home">Logout</a></div>
+    <div class="loginDiv" *ngIf="loggedIn!==true"><a routerLink="/login">Login</a></div>
+  </div>
+  <div class="container">
+    <div class="leftNavContainer">
+      <app-left-nav></app-left-nav>
+    </div>
+      <router-outlet (loggedIn)="setLoggedIn(true)"></router-outlet>
+  </div>
+  <div class="footer">
+    <nav class="nav">
+      <a
+        *ngFor="let item of nav"
+        [routerLink]="item.link"
+        routerLinkActive="active"
+        [routerLinkActiveOptions]="{ exact: item.exact }">{{ item.name }}</a>
+    </nav>
+  </div>
+</div>

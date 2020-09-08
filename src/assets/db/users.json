@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1,
+        "firstName": "Phil",
+        "lastName": "Harker",
+        "email": "phil.harker@membersports.com",
+        "password": "pharker123"
+    },
+    {
+        "id": 2,
+        "firstName": "Mark",
+        "lastName": "Kolp",
+        "email": "mark.kolp@membersports.com",
+        "password": "mkolp123"
+    },
+    {
+        "id": 3,
+        "firstName": "Steve",
+        "lastName": "Richins",
+        "email": "steve.richins@membersports.com",
+        "password": "srichins123"
+    }
+]

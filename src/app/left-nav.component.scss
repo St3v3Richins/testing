@@ -1,0 +1,23 @@
+.leftNav {
+    width: 120px;
+    border-right: 1px lightgray solid;
+    padding-right: 5px;
+    min-height: 200px;
+    #navButtons li {
+        font-size: 8px;
+        list-style: none;
+        text-align: center;
+        background-color: #800020;
+        line-height: 20px;
+        border-radius: 5px;
+        margin-top: 5px;
+        a {
+            text-decoration: none;
+            color: white;
+        }
+    }
+    ul {
+        color: white;
+        padding-left: 0;
+    }
+}
